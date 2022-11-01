@@ -12,8 +12,12 @@ function App() {
   };
 
   const search = async () => {
-    const { data } = await api.get('', { params: { city_name: cityName } });
-    setResults(data.results.forecast.slice(0, 7));
+    try {
+      const { data } = await api.get('', { params: { city_name: cityName } });
+      setResults(data.results.forecast.slice(0, 7));
+    } catch (error) {
+      console.log('Error trying to search for this category!');
+    }
   };
   
   return (
