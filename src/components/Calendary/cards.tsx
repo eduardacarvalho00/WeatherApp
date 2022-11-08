@@ -58,10 +58,10 @@ export function Cards({
             {title}
           </Text>
           <Divider w={'90px'} />
-          {description === 'Thundershowers' ? <Icon w={'97px'} h={'66'} mt={'70px'} as={BsFillCloudLightningRainFill} /> : false}
-          {description === 'Scattered showers' ? <Icon w={'97px'} h={'66'} mt={'70px'} as={BsFillCloudHailFill} /> : false}
-          {description === 'Night Mostly cloudy' ? <Icon w={'97px'} h={'66'} mt={'70px'} as={BsFillSunFill} /> : false}
-          {description === 'Night partly cloudy' ? <Icon w={'97px'} h={'66'} mt={'70px'} as={BsFillCloudsFill} /> : false}
+          {description === 'Chuva' ? <Icon w={'97px'} h={'66'} mt={'70px'} as={BsFillCloudLightningRainFill} /> : false}
+          {description === 'Chuvas esparsas' ? <Icon w={'97px'} h={'66'} mt={'70px'} as={BsFillCloudHailFill} /> : false}
+          {description === 'Tempo limpo' ? <Icon w={'97px'} h={'66'} mt={'70px'} as={BsFillSunFill} /> : false}
+          {description === 'Parcialmente nublado' ? <Icon w={'97px'} h={'66'} mt={'70px'} as={BsFillCloudsFill} /> : false}
           <Heading
             fontFamily={'Orbitron'}
             fontWeight={'medium'}
@@ -136,13 +136,16 @@ export function Cards({
                   </Heading>
                 </Box>
 
-                <Flex flexDir={'column'} align={'center'}>
-                  {description === 'Thundershowers' ? <Icon fontSize={90} mb={4} as={BsFillCloudLightningRainFill} /> : false}
-                  {description === 'Scattered showers' ? <Icon fontSize={90} mb={4} as={BsFillCloudHailFill} /> : false}
-                  {description === 'Night Mostly cloudy' ? <Icon fontSize={90} mb={4} as={BsFillSunFill} /> : false}
+                <Flex flexDir={'column'} align={'center'}>                
+                
+                {description === 'Chuva' ? <Icon w={'153px'} h={'111'} as={BsFillCloudLightningRainFill} /> : false}
+                {description === 'Chuvas esparsas' ? <Icon w={'153px'} h={'111'} as={BsFillCloudHailFill} /> : false}
+                {description === 'Tempo limpo' ? <Icon w={'153px'} h={'111'} as={BsFillSunFill} /> : false}
+                {description === 'Parcialmente nublado' ? <Icon w={'153px'} h={'111'} as={BsFillCloudsFill} /> : false}
                  
                   <Text fontSize={24} fontWeight={'light'} textAlign={'center'} w={'210px'}>{description}</Text>
                 </Flex>
+
               </Flex>
               <Box mt={['50px', '79px']}>
                 <DescriptionCards title="rain probability:" response={`${rain}%`} />
