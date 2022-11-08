@@ -9,6 +9,8 @@ yarn dev
 ```
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+##
+
 ### Descrição do desafio 
 
 - Nesse projeto você irá criar um projeto de clima das cidades.
@@ -25,3 +27,14 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - Experiência do usuário 20%
 - Organização do código/projeto 20%
 - Realizar o objetivo do projeto 40%
+
+##
+
+#### Me aventurei no Figma para criar o design, você pode vê-lo por [aqui](https://www.figma.com/file/evqHNUZitcpQazCHu41Zdd/prova?node-id=0%3A1)
+
+- responsivo
+
+![image](https://user-images.githubusercontent.com/99972177/200575370-d2e267bc-5670-4b94-bdb1-6d435e3f58d7.png)
+![image](https://user-images.githubusercontent.com/99972177/200575589-d4e52117-6952-4bce-8b02-5608d46957b8.png)
+
+
